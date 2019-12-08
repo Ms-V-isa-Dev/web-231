@@ -14,11 +14,12 @@
  * Description: Returns a well-formatted string header
  */
 
-
+// Start
 exports.display = function(firstName, lastName, assignment) {
   let output = '\n' + firstName + ' ' + lastName + '\n' + assignment + '\nDate: ' +
     new Date().toLocaleDateString();
 
+// Output
   return (output);
 }
 // End program
