@@ -27,8 +27,8 @@ for (var key in seasons) {
 }
 
 /* Output should read:
-Winter: My goodness it's cold outside!
-Spring: Sometimes its a little cool outside.
-Summer: I like it hot, hot, hot!
-Autumn:"I enjoy the fall as well.
+My goodness it's cold outside!
+Sometimes its a little cool outside.
+I like it hot, hot, hot!
+"I enjoy the fall as well.
 */
