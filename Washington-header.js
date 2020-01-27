@@ -22,4 +22,9 @@ exports.display = function(firstName, lastName, assignment) {
 // Output
   return (output);
 }
+
+const header = require('./Washington-header.js');
+// Call the console.log() function to output a well-formatted header.
+console.log(header.display("Verlee", "Washington", "Exercise 7.2"));
+console.log('\n');
 // End program

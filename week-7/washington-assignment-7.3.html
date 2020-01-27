@@ -1,0 +1,53 @@
+<!--
+============================================
+; Title:  inline-javascript-functions.html
+; Author: Professor Krasso
+; Date:   25 June 2017
+; Modified by: Verlee Washington
+; Description: Demonstrates the use of client-side JavaScript
+;===========================================
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF 8">
+		<title>Assignment 7.3</title>
+		<meta name="description" content="JavaScript exercise 7.3" />
+		<meta name="author" content="Verlee Washington" />
+		<link rel="stylesheet" href="../site.css" type="text/css"  />
+	</head>
+
+	<body>
+    <script>
+    document.write("<h2>Shopping List v.1</h2>"+
+    "<ol>"+
+      "<li>Sunflower seeds</li>"+
+      "<li>Salad mix</li>"+
+      "<li>Cesar dressing</li>"+
+      "<li>Chicken breast</li>"+
+      "<li>Onion</li>"+
+   "</ol>");
+   </script>
+
+   <div id="list"></div>
+   <script>
+    // Using innerHTML table
+    document.getElementById('list').innerHTML = "<h2>Shopping List v.2</h2>"+
+    "<table>"+
+      "<thead>"+
+        "<tr>"+
+          "<th>Id</th>"+"<th>Item</th>"+
+          "</tr>"+
+          "</thead>"+
+          "<tbody>"+
+            "<tr><td>1</td><td>Sunflower seeds</td></tr>"+
+            "<tr><td>2</td><td>Salad mix</td></tr>"+
+            "<tr><td>3</td><td>Cesar dressing</td></tr>"+
+            "<tr><td>4</td><td>Chicken breast</td></tr>"+
+            "<tr><td>5</td><td>Onion</td></tr>"+
+          "</tbody>"+
+          "</table>"
+   </script>
+	</body>
+</html>

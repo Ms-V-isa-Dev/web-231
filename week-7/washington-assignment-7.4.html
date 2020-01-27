@@ -1,0 +1,43 @@
+<!--
+============================================
+; Title:  inline-javascript-functions.html
+; Author: Professor Krasso
+; Date:   25 June 2017
+; Modified by: Verlee Washington
+; Description: Demonstrates the use of inline JavaScript functions
+;===========================================
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Assignment 7.4</title>
+
+  <link rel="stylesheet" href="../site.css">
+</head>
+<body>
+<div id="list"></div>
+
+<script>
+  document.getElementById('list').innerHTML = "<h2>COMPUTER COMPONENTS</h2>" +
+    "<table>" +
+    "<thead>" +
+    "<tr>" +
+    "<th>Id</th>"+"<th>Name</th>"+"<th>Amount</th>"+"<th>Functions</th>"+
+    "</tr>" +
+    "</thead>" +
+    "<tbody>" +
+    "<tr><td>1</td><td>Mother Board</td><td>$229.99</td><td><a href='javascript:alert('1');'>EDIT | DELETE</a></tr>" +
+    "<tr><td>2</td><td>Graphics Card</td><td>$389.99</td><td><a href='javascript:alert('2');'>EDIT | DELETE</a></tr>" +
+    "<tr><td>3</td><td>Processor</td><td>$599.99</td><td><a href='javascript:alert('3');'>EDIT | DELETE</a></tr>" +
+    "<tr><td>4</td><td>Mouse</td><td>$29.99</td><td><a href='javascript:alert('4');'>EDIT | DELETE</a></tr>" +
+    "<tr><td>5</td><td>Keyboard</td><td>$29.99</td><td><a href='javascript:alert('5');'>EDIT | DELETE</a></tr>" +
+    "</tbody>" +
+    "</table>"
+</script>
+    <a href="javascript:alert('bar');">Click me!</a>
+    <br/><br/>
+    <a href="javascript:alert('1');">EDIT | DELETE</a>
+</body>
+</html>
