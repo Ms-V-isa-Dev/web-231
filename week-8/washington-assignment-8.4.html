@@ -1,0 +1,118 @@
+<!--
+============================================
+; Title: Assignment 8.2
+; Author: Verlee Washington
+; Date: 02/02/2020
+; Modified by:
+; Description: Putting it all together
+;===========================================
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Assignment 8.4</title>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- you will need to the href to point to your root directories css file -->
+  <link rel="stylesheet" href="../site.css">
+  <style type="text/css">
+    #employee tbody tr:hover {
+      cursor: pointer;
+      background-color: #ffff99;
+    }
+  </style>
+</head>
+<body>
+<h1>Assignment 8.4</h1>
+<div id="emps"></div>
+
+<script type="text/javascript">
+  // jQuery onClick event
+
+  // Don't remove this, just add your code to the body of the event (curly braces)
+  $(function () {
+    $("table tr").click(function(event) {
+      $("div").find('td:first').css
+      var empsId = $(this).text();
+      alert("Employees Id:" + empsId);
+    });
+  });
+
+ // Constructor function for employee objects
+  function employee(id, firstName, lastName, title){
+    this.id = id;
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.title = title;
+  }
+  const employees = [
+
+    new employee ('223', 'Margaret', 'Wilson', 'Operator'),
+    new employee ('229', 'George', 'Oliver', 'Sales Rep'),
+    new employee ('234', 'Alex', 'Lesley', 'Supervisor'),
+    new employee ('237', 'Judy', 'Silver', 'Sales assistant'),
+    new employee ('241', 'Rhonda', 'Moody', 'C.E.O.')
+    ];
+
+    // Title
+    var out="Employees" + "</br>" + "</br>";
+    // Iterate over the array of employees and output to the DOM
+    let index = 1
+    for (var x=0; x < employees.length; x++) {
+    out += index + '. ' + employees[x].id + " " + employees[x].firstName + " " +
+    employees[x].lastName + " " + employees[x].title + "</br>";
+    index++
+    }
+    document.getElementById('emps').innerHTML=out;
+
+    function getEmployees(employees, id) {
+
+    }
+    $(function(){
+    $(".empsId").click(function(event){
+      event.preventDefault();
+      var empsId = $(this).text();
+      var empsType = $(this).closest("td").next().text();
+      alert("{emps_id: " + empsId + ", emps_type: " + empsType + "}");
+    });
+  });
+
+  var output
+</script>
+<br/>
+<table>
+  <tr>
+    <td><a href="#" class="empsId">223</a></td>
+    <td>Operator</td>
+  </tr>
+
+  <tr>
+    <td><a href="#" class="empsId">229</a></td>
+    <td>Sales Rep</td>
+  </tr>
+
+  <tr>
+    <td><a href="#" class="empsId">234</a></td>
+    <td>Supervisor</td>
+  </tr>
+
+  <tr>
+    <td><a href="#" class="empsId">237</a></td>
+    <td>Sales assistant</td>
+  </tr>
+
+  <tr>
+    <td><a href="#" class="empsId">241</a></td>
+    <td>C.E.O.</td>
+  </tr>
+</table>
+<br/>
+<script>
+for (const property in object) {
+  out += $property; $object[property]};
+</script>
+</body>
+</html>
